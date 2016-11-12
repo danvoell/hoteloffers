@@ -10,7 +10,8 @@
       <th>City</th>
       <th>State</th>
       <th>Promo</th>
-      <th>Offer</th>
+      <th>Offer</th>  
+      <th>Link to Hotel Site</th>
       
       <th colspan="3"></th>
     </tr>
@@ -24,8 +25,8 @@
         <td><%= offer.hotelcity %></td>
         <td><%= offer.hotelstate %></td>
         <td><%= offer.promocode %></td>
-       <td><a href="<%= offer.offerurl %>"><%= offer.offertext %></a></td>
-       <td><%= link_to 'Details', offer %></td>
+       <td><%= link_to offer.offertext, offer %></td>
+ <td><a href="<%= offer.offerurl %>">Details</a></td>
              </tr>
     <% end %>
   </tbody>
