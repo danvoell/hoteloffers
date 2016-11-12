@@ -1,0 +1,73 @@
+<%= form_for(@offer) do |f| %>
+  <% if @offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% @offer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hotelname %><br>
+    <%= f.text_area :hotelname %>
+  </div>
+  <div class="field">
+    <%= f.label :hotelchain %><br>
+    <%= f.text_area :hotelchain %>
+  </div>
+  <div class="field">
+    <%= f.label :hotelcity %><br>
+    <%= f.text_area :hotelcity %>
+  </div>
+  <div class="field">
+    <%= f.label :hotelstate %><br>
+    <%= f.text_area :hotelstate %>
+  </div>
+  <div class="field">
+    <%= f.label :promocode %><br>
+    <%= f.text_area :promocode %>
+  </div>
+  <div class="field">
+    <%= f.label :offerurl %><br>
+    <%= f.text_area :offerurl %>
+  </div>
+  <div class="field">
+    <%= f.label :offertext %><br>
+    <%= f.text_area :offertext %>
+  </div>
+  <div class="field">
+    <%= f.label :roomcategory %><br>
+    <%= f.text_area :roomcategory %>
+  </div>
+  <div class="field">
+    <%= f.label :offerbegindate %><br>
+    <%= f.date_select :offerbegindate %>
+  </div>
+  <div class="field">
+    <%= f.label :offerenddate %><br>
+    <%= f.date_select :offerenddate %>
+  </div>
+  <div class="field">
+    <%= f.label :travelbegindate %><br>
+    <%= f.date_select :travelbegindate %>
+  </div>
+  <div class="field">
+    <%= f.label :travelenddate %><br>
+    <%= f.date_select :travelenddate %>
+  </div>
+  <div class="field">
+    <%= f.label :dealphotourl %><br>
+    <%= f.text_area :dealphotourl %>
+  </div>
+  <div class="field">
+    <%= f.label :offerdetails %><br>
+    <%= f.text_area :offerdetails %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

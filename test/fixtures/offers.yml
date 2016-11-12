@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hotelname: MyText
+  hotelchain: MyText
+  hotelcity: MyText
+  hotelstate: MyText
+  promocode: MyText
+  offerurl: MyText
+  offertext: MyText
+  roomcategory: MyText
+  offerbegindate: 2016-11-12
+  offerenddate: 2016-11-12
+  travelbegindate: 2016-11-12
+  travelenddate: 2016-11-12
+  dealphotourl: MyText
+  offerdetails: MyText
+
+two:
+  hotelname: MyText
+  hotelchain: MyText
+  hotelcity: MyText
+  hotelstate: MyText
+  promocode: MyText
+  offerurl: MyText
+  offertext: MyText
+  roomcategory: MyText
+  offerbegindate: 2016-11-12
+  offerenddate: 2016-11-12
+  travelbegindate: 2016-11-12
+  travelenddate: 2016-11-12
+  dealphotourl: MyText
+  offerdetails: MyText
