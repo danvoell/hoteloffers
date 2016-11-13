@@ -1,74 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Hotelname:</strong>
-  <%= @offer.hotelname %>
-</p>
 
-<p>
-  <strong>Hotelchain:</strong>
-  <%= @offer.hotelchain %>
-</p>
+<div class="row">
 
-<p>
-  <strong>Hotelcity:</strong>
-  <%= @offer.hotelcity %>
-</p>
+<div class="col-md-2">
+<img src="<%= @offer.dealphotourl %>" width="175">
+</div>
 
-<p>
-  <strong>Hotelstate:</strong>
-  <%= @offer.hotelstate %>
-</p>
+  <div class="col-md-8">
 
-<p>
-  <strong>Promocode:</strong>
-  <%= @offer.promocode %>
-</p>
 
-<p>
-  <strong>Offerurl:</strong>
-  <%= @offer.offerurl %>
-</p>
 
-<p>
-  <strong>Offertext:</strong>
-  <%= @offer.offertext %>
-</p>
 
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title"> <%= @offer.offertext %> <small>- <%= @offer.hotelname %></small></h1>
+  </div>
+  <div class="panel-body">
 <p>
-  <strong>Roomcategory:</strong>
-  <%= @offer.roomcategory %>
-</p>
-
-<p>
-  <strong>Offerbegindate:</strong>
-  <%= @offer.offerbegindate %>
-</p>
-
-<p>
-  <strong>Offerenddate:</strong>
-  <%= @offer.offerenddate %>
-</p>
-
-<p>
-  <strong>Travelbegindate:</strong>
-  <%= @offer.travelbegindate %>
-</p>
-
-<p>
-  <strong>Travelenddate:</strong>
-  <%= @offer.travelenddate %>
-</p>
-
-<p>
-  <strong>Dealphotourl:</strong>
-  <%= @offer.dealphotourl %>
-</p>
-
-<p>
-  <strong>Offerdetails:</strong>
+  <strong>Offer Details:</strong>
   <%= @offer.offerdetails %>
 </p>
 
+<p>
+  <strong>Hotel Chain: </strong><%= @offer.hotelchain %><br> 
+  <strong>Hotel: </strong><%= @offer.hotelname %><br>
+  <strong>City: </strong><%= @offer.hotelcity %><br>
+  <strong>State: </strong><%= @offer.hotelstate %><br>
+
+  <strong>Promo Code: </strong>
+  <%= @offer.promocode %><br>
+ <strong>Offer Link</strong> - <%= link_to @offer.offerurl, @offer.offerurl %><br>
+  <strong>Room Category: </strong><%= @offer.roomcategory %>
+</p>
+
+
+
+<p>
+
+</p>
+
+
+
 <%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>
+
+ </div>
+</div>
+</div>
+</div>
+
