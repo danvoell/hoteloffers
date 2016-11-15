@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-
 <div class="row">
-
-<div class="col-md-2">
-<img src="<%= @offer.dealphotourl %>" width="175">
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><%= @offer.offertext %></li>
+</ol>
 </div>
 
-  <div class="col-md-8">
-
-
-
-
+<div class="row">
+  <div class="col-md-9">
 <div class="panel panel-default">
   <div class="panel-heading">
     <h1 class="panel-title"> <%= @offer.offertext %> <small>- <%= @offer.hotelname %></small></h1>
   </div>
   <div class="panel-body">
 <p>
+    <div class="row">
+    <div class="col-md-4"><img src="<%= @offer.dealphotourl %>" class="img-responsive"></div>
+ <div class="col-md-8">
   <strong>Offer Details:</strong>
   <%= @offer.offerdetails %>
 </p>
@@ -44,9 +44,27 @@
 
 <%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>
+</div>
+</div>
 
  </div>
 </div>
 </div>
+
+<div class="col-md-3">
+<div class="panel panel-success">
+<div class="panel-heading">
+    <h1 class="panel-title">HI</h1>
+  </div>
+
+  
+
+</div>
+
+</div>
+
+
+
+
 </div>
 

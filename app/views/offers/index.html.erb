@@ -1,8 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Hotel Package Offers Database</h2>
 
-<table class="table table-striped">
+<div class="row">
+
+<div class="col-lg-6 col-lg-offset-3">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for Romance, Golf, Toledo, 99% off...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->                                    
+</div>
+<br>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+ <div class="panel-heading"><h2>Find the perfect package for your next vacation</h2></div>
+
+
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Hotel</th>
@@ -12,8 +28,6 @@
       <th>Promo</th>
       <th>Offer</th>  
       <th>Link to Hotel Site</th>
-      
-      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -31,6 +45,7 @@
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
 
